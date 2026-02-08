@@ -32,7 +32,7 @@ jobs:
           GITHUB_USERNAME: asrivastava-github
           USE_GITHUB_DATA: "false"
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: build
 
