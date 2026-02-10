@@ -4,7 +4,7 @@ Personal portfolio website showcasing my experience as a Platform Engineer & Clo
 
 ## Live Site
 
-Visit: [https://asrivastava-github.github.io/iamavi/](https://asrivastava-github.github.io/iamavi/)
+Visit: [https://hey.iamavi.uk](https://hey.iamavi.uk)
 
 ## About
 
