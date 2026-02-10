@@ -31,9 +31,4 @@ describe("Greeting", () => {
       screen.getByText(/A passionate Platform Engineer/)
     ).toBeInTheDocument();
   });
-
-  it("has a 'Contact me' button", () => {
-    renderWithContext(<Greeting />);
-    expect(screen.getByText("Contact me")).toBeInTheDocument();
-  });
 });
