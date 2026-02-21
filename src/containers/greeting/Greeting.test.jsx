@@ -27,8 +27,8 @@ describe("Greeting", () => {
 
   it("renders the subtitle text", () => {
     renderWithContext(<Greeting />);
-    expect(
-      screen.getByText(/A passionate Platform Engineer/)
-    ).toBeInTheDocument();
+    const subtitle = document.querySelector(".greeting-text-p");
+    expect(subtitle).toBeInTheDocument();
+    expect(subtitle.textContent).toMatch(/Systems Engineer/);
   });
 });

@@ -27,8 +27,8 @@ describe("portfolio data", () => {
     expect(workExperiences.experience).toHaveLength(5);
   });
 
-  it("bigProjects has 4 projects", () => {
-    expect(bigProjects.projects).toHaveLength(4);
+  it("bigProjects has 8 projects", () => {
+    expect(bigProjects.projects).toHaveLength(8);
   });
 
   it("achievementSection has certifications", () => {

@@ -30,7 +30,7 @@ const greeting = {
   username: "iamavi",
   title: "Hi all, I'm Avinash",
   subTitle: emoji(
-    "A passionate Platform Engineer ☁️ with 16+ years of experience in designing, developing, and deploying solutions on AWS. Expertise in serverless, containers, and Infrastructure as Code (IaC). Award-winning (DevOps Industry Awards 2019, European Software Testing 2018 & 2019)."
+    "A passionate Systems Engineer with extensive experience in designing, developing, and deploying secure, resilient, and cost efficient solutions on Cloud ☁️ specifically on AWS. Expertise in serverless, containers, orchestration and Infrastructure as Code (IaC). As a key member of multiple award-winning DevOps teams, I bring a 'Day 2 Operations' mindset to every architectural blueprint I design"
   ),
   resumeLink: "",
   displayGreeting: true
@@ -60,6 +60,9 @@ const skillsSection = {
     ),
     emoji(
       "⚡ Implement robust CI/CD pipelines, GitOps workflows, and observability stacks for production systems"
+    ),
+    emoji(
+      "⚡ Evolved from mastering deep-system automation and BMC Control-M administration to architecting modern, self-healing platforms using AWS, Kubernetes, and Agentic AI."
     )
   ],
 
@@ -67,6 +70,10 @@ const skillsSection = {
     {
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "kagent",
+      fontAwesomeClassname: "fab fa-kagent"
     },
     {
       skillName: "docker",
@@ -151,7 +158,7 @@ const techStack = {
     },
     {
       Stack: "Platform Engineering",
-      progressPercentage: "85%"
+      progressPercentage: "95%"
     }
   ],
   displayCodersrank: false
@@ -168,10 +175,11 @@ const workExperiences = {
       date: "January 2023 – Present",
       desc: "Leading platform engineering initiatives for Viator's cloud infrastructure on AWS EKS.",
       descBullets: [
-        "Performed 6 consecutive EKS upgrades (v1.24 to v1.30) and managed critical platform components",
-        "Implemented CDN with Layer 7 protection to mitigate OWASP attacks",
-        "Built Internal Developer Platforms using Backstage for self-service AWS resource deployment",
-        "Reduced release time and compute by 70% using ArgoCD Rollouts"
+        "Agentic AI Leadership: Designing and deploying agentic solution for platform readiness and upgrade confidence using kagent.",
+        "Ownership: Lead Platform/DevOps engineer for Kubernetes and AWS infrastructure powering large‑scale, customer‑facing services.",
+        "Infrastructure Modernization: Performed 6 consecutive EKS upgrades and managed critical platform components.",
+        "Security at Scale: Implemented CDN with Layer 7 protection to reduce OWASP attack surface areas by 80%.",
+        "Platform Engineering: Built Internal Developer Platforms using Backstage for self-service AWS resource deployment",
       ]
     },
     {
@@ -180,8 +188,9 @@ const workExperiences = {
       date: "November 2021 – December 2022",
       desc: "Designed serverless data ingestion APIs handling 10k requests/sec using API Gateway, Lambda, SQS, and EventBridge.",
       descBullets: [
-        "Published reusable Node.js packages for central engineering teams",
-        "Led knowledge-sharing sessions and technical bootcamps"
+        "Serverless Architecture: Designed and delivered a scalable data ingestion API handling 10,000 requests per second using AWS Lambda, SQS, SNS, and EventBridge.",
+        "Developer Tooling: Published a reusable Node.js package for central teams and fully automated deployment pipelines via GitHub webhooks and CodePipeline.",
+        "Stakeholder Leadership: Acted as the primary technical bridge, translating complex business problems into architectural 'technical asks' and conducting bootcamps for new joiners."
       ]
     },
     {
@@ -190,22 +199,43 @@ const workExperiences = {
       date: "July 2012 – November 2021",
       desc: "Led DevOps transformation for enterprise clients across multiple global markets.",
       descBullets: [
-        "Built domain management solution for ~10 global markets using Python/boto3",
-        "Achieved £20k annual savings via infrastructure optimizations",
-        "Implemented config-driven CI/CD pipelines in Azure DevOps and Jenkins"
+        "Cloud Migration SME: Led the DataCentre exit initiative, migrating complex legacy applications from on-prem to AWS.",
+        "Global Traffic Management: Developed a custom redirector tool managing 1,400+ domains using AWS Global Accelerator and ALB, resulting in near-zero maintenance.",
+        "Cost Optimization: Achieved £72k+ annual savings by replacing EBS-based snapshots with S3 and implementing a serverless 'stopenator' for scheduled autoscaling.",
+        "Automation SME: Specialized in BMC Control-M architecture, designing 3-layer highly available and fault-tolerant batch scheduling systems.",
+        "Compliance-Driven ISAM Snapshots: Built a Blue-Green deployment pipeline for 50 IBM SAM instances, ensuring all base AMI deployments remained compliant with organizational standards",
+        "'Fire & Forget' Operations: Developed serverless solutions for complex operational activities using AWS Step Functions and Lambda to automate high-level reporting and stack monitoring.",
+        "The 'Pet Instance' Blue-Green Pipeline: Designed an end-to-end Azure DevOps pipeline to refresh 'Pet Instance' AMIs for ISAM on AWS, leveraging ISAM snapshot techniques and Hashicorp Vault for secret management."
       ]
     },
     {
       role: "Senior Operations Professional",
       company: "IBM",
       date: "October 2010 – June 2012",
-      desc: "Subject Matter Expert for BMC Workload automation; designed 3-layer high-availability setups."
+      desc: "Subject Matter Expert for BMC Workload automation; designed 3-layer high-availability setups.",
+      descBullets: [
+        "Automated Agent Deployment: Developed a generalized Shell and Perl framework to automate application agent installations across massive Unix fleets, including key-based authentication setup for 100+ servers.",
+        "Enterprise Batch Architecture: Served as a Subject Matter Expert (SME) for BMC Workload Automation, designing 3-layer highly available and fault-tolerant architectures for global banking domains",
+        "High-Stakes Infrastructure Migration: Planned and implemented complex environment migrations and version upgrades for BMC Control-M, encompassing full server and database provisioning",
+        "Process Optimization: Streamlined enterprise port usage across different applications to prevent conflicts and ensure seamless service communication.",
+        "Cross-Functional Mentoring: Guided and trained multiple application teams on managing their own batch scheduling ecosystems using Control-M utilities.",
+        "Advanced Troubleshooting: Resolved critical TCP/IP communication and configuration issues between agents and servers using advanced Configuration Manager utilities.",
+        "System Governance: Performed deep-level administrative tasks including filesystem permission audits, security reviews, and configuration file optimization."
+      ]
     },
     {
       role: "Technology Analyst / Engineer",
       company: "DXC Technology (formerly CSC)",
       date: "May 2008 – September 2010",
-      desc: "Administrator for BMC Workload automation (Control-M) platform."
+      desc: "Administrator for BMC Workload automation (Control-M) platform.",
+      descBullets: [
+        "L1/L2 Systems Administration: Provided 24/7 server-side support for high-profile investment banking clients, focusing on Unix (Solaris/Linux) system health and application stability.",
+        "Infrastructure Reliability: Monitored and resolved complex server and application configuration issues to maintain strict uptime requirements.",
+        "Package & Binary Management: Managed software lifecycles including installing, maintaining, and upgrading binaries using package managers like yum, rpm, and apt-get.",
+        "Security & Access Control: Administered user and group permissions, directory structures, and secure access protocols across multi-domain Unix environments.",
+        "Business Continuity Planning: Actively participated in Disaster Recovery (DR) planning and Change Advisory Board (CAB) sessions to ensure safe deployment cycles.",
+        "System Provisioning: Analyzed system requirements (vCPU, RAM, storage) to provision and install core application agents on diverse Unix platforms."
+      ]
     }
   ]
 };
@@ -218,27 +248,51 @@ const bigProjects = {
     "Tools and platforms I have built to solve real-world infrastructure challenges.",
   projects: [
     {
-      projectName: "Redirector",
+      projectName: "K8S Platform Readiness & Diagnostics",
       projectDesc:
-        "A scalable URL redirection service built on AWS serverless stack (API Gateway, Lambda, DynamoDB) to manage and route traffic across multiple domains and markets.",
+        "Led a 'shift-left' AI initiative for platform resiliency by integrating k8sgpt into CI/CD and clusters for automated Kubernetes diagnostics. Deployed kagent with multi-cloud/multi-tool MCPs to power self-service, runbook-style engineer queries and task-specific agents for EKS upgrade readiness and EOL insights.",
       footerLink: []
     },
     {
-      projectName: "Stopinator",
+      projectName: "Global Scalable Redirector",
       projectDesc:
-        "An automated cost-optimization tool that identifies and stops idle AWS resources (EC2, RDS, ECS) outside business hours, saving significant cloud spend.",
+        "Designed and delivered a serverless redirector solution for ~10 global markets with a multi-domain provider using AWS Global Accelerator and ALB (HTTPS listener rules) with ACM. Developed a custom in-house deployment tool using Python and the AWS SDK (boto3) to provide granular CRUD control over 1,400+ unqualified domains.",
       footerLink: []
     },
     {
-      projectName: "WAF Implementation",
+      projectName: "Cloud 'Stopinator' & Cost Optimization",
       projectDesc:
-        "End-to-end AWS WAF and CDN implementation with Layer 7 protection rules to mitigate OWASP Top 10 attacks, bot traffic, and DDoS across production workloads.",
+        "Engineered a serverless 'stopenator' solution with schedule-based autoscaling using Lambda, SQS, and CloudWatch to manage 'Pet' instances. This initiative, combined with migrating ISAM snapshots to S3, achieved significant cloud savings of approximately £10k per month.",
       footerLink: []
     },
     {
-      projectName: "Internal Developer Platform",
+      projectName: "Layer 7 WAF & CDN Protection",
       projectDesc:
-        "Self-service platform built on Backstage enabling engineering teams to provision AWS resources, deploy services, and manage infrastructure through golden paths and templates.",
+        "Led an organization-wide infrastructure change by placing a CDN in front of public-facing services and integrating Layer 7 protection to mitigate ongoing OWASP attacks. Segregated and deployed reverse proxy clusters per business unit, reducing the area of impact for potential attacks by 80%.",
+      footerLink: []
+    },
+    {
+      projectName: "Internal Developer Platform (IDP)",
+      projectDesc:
+        "Built and maintained a self-service platform as part of the Platform Engineering team to provide streamlined, scalable infrastructure and enhance developer productivity. Implemented infrastructure self-service using Backstage, allowing developers to deploy AWS services like ElastiCache and S3 via automated Terragrunt file generation.",
+      footerLink: []
+    },
+    {
+      projectName: "Zero-Downtime Service Migration",
+      projectDesc:
+        "Rearchitected and migrated an entire service, including 400 EC2 instances backed by ASG and a complex network setup (Private Subnet, Public NLB, On-premise DB), from one AWS account to another with zero impact on end-users.",
+      footerLink: []
+    },
+    {
+      projectName: "High-Scale Data Ingestion API",
+      projectDesc:
+        "Developed and delivered a resilient data ingestion API endpoint handling 10,000 requests per second. Leveraged AWS Serverless patterns including API Gateway, Lambda, SQS, SNS, EventBridge, and Route53, and published a reusable Node.js package for central team consumption.",
+      footerLink: []
+    },
+    {
+      projectName: "Automated Blue-Green Pet Instance Refresh",
+      projectDesc:
+        "Designed and developed an end-to-end Azure DevOps pipeline with integrated Jenkins deployments to refresh the AMI of 'Pet' instances. Utilized the ISAM Python library, Boto3, and HashiCorp Vault for secure secret management to manage AWS listener rules and EC2 lifecycle.",
       footerLink: []
     }
   ],
