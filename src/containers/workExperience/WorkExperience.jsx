@@ -1,12 +1,12 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import "./WorkExperience.scss";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard";
-import {workExperiences} from "../../portfolio";
-import {Fade} from "react-awesome-reveal";
+import { workExperiences } from "../../portfolio";
+import { Fade } from "react-awesome-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function WorkExperience() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   if (!workExperiences.display) return null;
 
   return (
@@ -18,9 +18,6 @@ export default function WorkExperience() {
             {workExperiences.experience.map((card, i) => (
               <div className="experience-timeline-item" key={i}>
                 <div className="experience-timeline-dot"></div>
-                {i < workExperiences.experience.length - 1 && (
-                  <div className="experience-timeline-connector"></div>
-                )}
                 <ExperienceCard
                   isDark={isDark}
                   cardInfo={{
@@ -28,7 +25,7 @@ export default function WorkExperience() {
                     desc: card.desc,
                     date: card.date,
                     role: card.role,
-                    descBullets: card.descBullets
+                    descBullets: card.descBullets,
                   }}
                 />
               </div>

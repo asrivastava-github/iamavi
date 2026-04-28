@@ -12,44 +12,50 @@
   margin-top: 2rem;
 }
 
-/* Desktop: flexible timeline */
+/* Single vertical timeline */
 .experience-timeline {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
   margin-top: 2rem;
-  padding-bottom: 1.5rem;
+  padding: 1rem 0 1.5rem;
+}
+
+/* Vertical line behind every item */
+.experience-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: $lightBorder1;
+  transform: translateX(-50%);
+  z-index: 0;
 }
 
 .experience-timeline-item {
   position: relative;
-  flex: 1 1 0;
-  min-width: 250px;
+  width: 100%;
+  max-width: clamp(640px, 75vw, 1280px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  scroll-snap-align: start;
+  z-index: 1;
 }
 
 .experience-timeline-dot {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background: $buttonColor;
+  border: 3px solid $lightBackground1;
+  box-shadow: 0 0 0 2px $buttonColor;
   flex-shrink: 0;
-  z-index: 1;
-  margin-bottom: 1rem;
-}
-
-.experience-timeline-connector {
-  position: absolute;
-  top: 6px;
-  left: calc(50% + 7px);
-  width: calc(100%);
-  height: 2px;
-  background: $lightBorder1;
-  z-index: 0;
+  z-index: 2;
+  margin-bottom: 1.25rem;
 }
 
 .experience-timeline-item .experience-card,
@@ -58,23 +64,9 @@
   margin: 0 auto;
 }
 
-/* Scrollbar styling */
-.experience-timeline::-webkit-scrollbar {
-  height: 6px;
-}
-
-.experience-timeline::-webkit-scrollbar-track {
-  background: $progressBarBackground;
-  border-radius: 3px;
-}
-
-.experience-timeline::-webkit-scrollbar-thumb {
-  background: $subTitle;
-  border-radius: 3px;
-}
-
-.experience-timeline::-webkit-scrollbar-thumb:hover {
-  background: $buttonColor;
+/* Dark mode dot border */
+.dark-mode .experience-timeline-dot {
+  border-color: $darkBackground;
 }
 
 /* Media Queries */
@@ -84,13 +76,7 @@
   }
 
   .experience-timeline-item {
-    flex: 1 1 0;
-    min-width: 220px;
-  }
-
-  .experience-timeline-item .experience-card,
-  .experience-timeline-item .experience-card-dark {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -101,29 +87,23 @@
   }
 
   .experience-timeline {
-    flex-direction: column;
-    overflow-x: visible;
-    align-items: center;
-    gap: 1.5rem;
-    padding-bottom: 0;
+    gap: 2rem;
+  }
+
+  .experience-timeline::before {
+    left: 16px;
   }
 
   .experience-timeline-item {
-    flex: 0 0 auto;
-    width: 100%;
-  }
-
-  .experience-timeline-item .experience-card,
-  .experience-timeline-item .experience-card-dark {
-    width: 100%;
-    max-width: 400px;
+    max-width: 100%;
+    align-items: stretch;
+    padding-left: 2.5rem;
   }
 
   .experience-timeline-dot {
-    display: none;
-  }
-
-  .experience-timeline-connector {
-    display: none;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    margin-bottom: 0;
   }
 }
