@@ -1,11 +1,13 @@
 {
-  "short_name": "Avinash Portfolio",
-  "name": "Avinash Chandra Srivastava Portfolio",
+  "short_name": "iamavi",
+  "name": "Avinash Chandra Srivastava | Principal Platform Engineer",
+  "description": "Principal Platform Engineer | AWS, Kubernetes (EKS), Terraform, SRE, DevSecOps, agentic operations.",
   "icons": [
     {
-      "src": "/favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
     },
     {
       "src": "/android-chrome-192x192.png?v8=qAJ44G5Bm7",
@@ -18,8 +20,11 @@
       "sizes": "384x384"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "theme_color": "#6c63ff",
-  "background_color": "#ffffff"
+  "background_color": "#171c28",
+  "lang": "en-GB"
 }

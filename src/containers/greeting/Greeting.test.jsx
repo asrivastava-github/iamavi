@@ -1,34 +1,34 @@
 import React from "react";
-import {render, screen} from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import Greeting from "./Greeting";
 import StyleContext from "../../contexts/StyleContext";
 
 vi.mock("react-easy-emoji", () => ({
-  default: (input) => input
+  default: (input) => input,
 }));
 
 vi.mock("lottie-react", () => ({
-  default: () => <div data-testid="lottie" />
+  default: () => <div data-testid="lottie" />,
 }));
 
 const renderWithContext = (component) => {
   return render(
-    <StyleContext.Provider value={{isDark: false, changeTheme: () => {}}}>
+    <StyleContext.Provider value={{ isDark: false, changeTheme: () => {} }}>
       {component}
-    </StyleContext.Provider>
+    </StyleContext.Provider>,
   );
 };
 
 describe("Greeting", () => {
-  it("renders greeting title 'Hi all, I'm Avinash'", () => {
+  it("renders greeting title", () => {
     renderWithContext(<Greeting />);
-    expect(screen.getByText(/Hi all, I'm Avinash/)).toBeInTheDocument();
+    expect(screen.getByText(/Hi, I'm Avinash/)).toBeInTheDocument();
   });
 
   it("renders the subtitle text", () => {
     renderWithContext(<Greeting />);
     const subtitle = document.querySelector(".greeting-text-p");
     expect(subtitle).toBeInTheDocument();
-    expect(subtitle.textContent).toMatch(/Systems Engineer/);
+    expect(subtitle.textContent).toMatch(/Principal Platform Engineer/);
   });
 });

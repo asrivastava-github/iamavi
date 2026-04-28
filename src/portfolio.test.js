@@ -5,11 +5,11 @@ import {
   bigProjects,
   achievementSection,
   blogSection,
-  contactInfo
+  contactInfo,
 } from "./portfolio";
 
 vi.mock("react-easy-emoji", () => ({
-  default: (input) => input
+  default: (input) => input,
 }));
 
 describe("portfolio data", () => {
@@ -27,8 +27,8 @@ describe("portfolio data", () => {
     expect(workExperiences.experience).toHaveLength(5);
   });
 
-  it("bigProjects has 8 projects", () => {
-    expect(bigProjects.projects).toHaveLength(8);
+  it("bigProjects has 12 projects", () => {
+    expect(bigProjects.projects).toHaveLength(12);
   });
 
   it("achievementSection has certifications", () => {

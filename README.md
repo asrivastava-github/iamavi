@@ -1,45 +1,70 @@
-# Avinash Chandra Srivastava | Platform Engineer Portfolio
+# Avinash Chandra Srivastava | Principal Platform Engineer Portfolio
 
-Personal portfolio website showcasing my experience as a Platform Engineer & Cloud Architect with 16+ years in AWS, Kubernetes, Terraform, and DevOps.
+Personal portfolio site for Avinash Chandra Srivastava, a Principal Platform Engineer with 16+ years of experience in AWS, Kubernetes (EKS), Terraform, SRE, DevSecOps, and agentic platform operations.
 
-## Live Site
+Live: [https://hey.iamavi.uk](https://hey.iamavi.uk)
 
-Visit: [https://hey.iamavi.uk](https://hey.iamavi.uk)
+## Highlights
 
-## About
+- Principal / Lead Platform Engineering scope at Viator (TripAdvisor): EKS lifecycle, Disaster Recovery, edge / WAF, IaC governance, IDP, and agentic operations.
+- Severity 1 Incident Commander (AWS NAT blackhole, DataDome global block, Fastly regression, GitLab.com outage).
+- Multi-quarter platform programs: AWS SSO migration, Disaster Recovery, kagent + MCP rollout.
+- Awards: DevOps Industry Awards 2019, European Software Testing Awards 2018 and 2019.
 
-This portfolio highlights my:
-- Professional experience across Viator (TripAdvisor), Accenture, TCS, IBM, and DXC
-- Cloud & DevOps expertise (AWS, Kubernetes, Terraform, Docker, ArgoCD)
-- Certifications (CKAD, AWS SA Professional/Associate, Azure SA, Solace EDA)
-- Projects and technical blogs
+## Tech Stack
 
-## Getting Started
+- Frontend: React 18, Vite 7, Sass, Lottie, react-awesome-reveal
+- Hosting: GitHub Pages on `hey.iamavi.uk` (Cloudflare DNS)
+- CI / CD: GitHub Actions (build + deploy + Dependabot weekly updates)
+
+## Local Development
 
 ```bash
-# Install dependencies
-npm install
+# Install
+npm ci
 
-# Start development server
+# Run dev server (http://localhost:3000)
 npm start
 
-# Build for production
+# Production build
 npm run build
 
-# Run tests
+# Preview production build
+npm run preview
+
+# Tests
 npm test
+
+# Format / lint
+npm run format
+npm run check-format
 ```
+
+## Configuration
+
+Edit content in `src/portfolio.js`. Theme colours live in `src/_globalColor.scss`. Page metadata, structured data (JSON-LD `Person`), and security headers live in `index.html`.
+
+Optional GitHub / Medium data fetch is gated by `USE_GITHUB_DATA` / `MEDIUM_USERNAME` environment variables (see `fetch.js`).
+
+## Security Posture
+
+- Strict Content Security Policy (CSP) and Permissions-Policy delivered via `<meta>` headers.
+- `Referrer-Policy: strict-origin-when-cross-origin`, `X-Content-Type-Options: nosniff`.
+- `frame-ancestors 'none'` (clickjacking protection), `object-src 'none'`, `upgrade-insecure-requests`.
+- `crossorigin="anonymous"` on third-party CDN stylesheets.
+- `.well-known/security.txt` for responsible disclosure.
+- Dependabot weekly updates for npm and GitHub Actions.
+
+## SEO
+
+- Canonical URL, descriptive `<title>` and meta description, Open Graph, Twitter Card.
+- `sitemap.xml` referenced from `robots.txt`.
+- JSON-LD `Person` schema for rich results.
 
 ## Deployment
 
-Deployed automatically to GitHub Pages via GitHub Actions on push to `main`.
-
-## Built With
-
-- React 18
-- Vite 7
-- Sass
+Pushes to `main` trigger `.github/workflows/deploy.yml`, which builds the site and publishes to GitHub Pages via `actions/deploy-pages`.
 
 ## License
 
-This project is licensed under the MIT License.
+MIT - see `LICENSE`.
