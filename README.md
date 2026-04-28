@@ -1,12 +1,12 @@
-# Avinash Chandra Srivastava | Principal Platform Engineer Portfolio
+# Avinash Chandra Srivastava | Senior Platform Engineer Portfolio
 
-Personal portfolio site for Avinash Chandra Srivastava, a Principal Platform Engineer with 16+ years of experience in AWS, Kubernetes (EKS), Terraform, SRE, DevSecOps, and agentic platform operations.
+Personal portfolio site for Avinash Chandra Srivastava, a Senior Platform Engineer with 16+ years of experience in AWS, Kubernetes (EKS), Terraform, SRE, DevSecOps, and agentic platform operations.
 
 Live: [https://hey.iamavi.uk](https://hey.iamavi.uk)
 
 ## Highlights
 
-- Principal / Lead Platform Engineering scope at Viator (TripAdvisor): EKS lifecycle, Disaster Recovery, edge / WAF, IaC governance, IDP, and agentic operations.
+- Senior Platform Engineer at Viator (TripAdvisor): EKS lifecycle, Disaster Recovery, edge / WAF, IaC governance, IDP, and agentic operations.
 - Severity 1 Incident Commander (AWS NAT blackhole, DataDome global block, Fastly regression, GitLab.com outage).
 - Multi-quarter platform programs: AWS SSO migration, Disaster Recovery, kagent + MCP rollout.
 - Awards: DevOps Industry Awards 2019, European Software Testing Awards 2018 and 2019.

@@ -30,7 +30,7 @@ const greeting = {
   username: "iamavi",
   title: "Hi, I'm Avinash",
   subTitle: emoji(
-    "Principal Platform Engineer with 16+ years architecting resilient, secure, cost-efficient cloud platforms on AWS ☁️. I lead multi-quarter programs across Kubernetes (EKS), Terraform, and SRE; command Severity 1 incidents; and shift platform operations left with agentic AI (kagent, k8sgpt, MCP). Award-winning team contributor with a 'Day 2 Operations' mindset baked into every blueprint.",
+    "Senior Platform Engineer with 16+ years architecting resilient, secure, cost-efficient cloud platforms on AWS ☁️. I lead multi-quarter programs across Kubernetes (EKS), Terraform, and SRE; command Severity 1 incidents; and shift platform operations left with agentic AI (kagent, k8sgpt, MCP). Award-winning team contributor with a 'Day 2 Operations' mindset baked into every blueprint.",
   ),
   // resumeLink: "/Avinash_Srivastava_Resume.pdf", // disabled until PDF is finalised
   resumeLink: "",
@@ -51,7 +51,7 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "Principal Platform Engineer designing resilience-first cloud platforms and the agentic tooling around them",
+    "Senior Platform Engineer designing resilience-first cloud platforms and the agentic tooling around them",
   skills: [
     emoji(
       "⚡ Architect resilient, multi-cluster Kubernetes (EKS) platforms with Disaster Recovery, golden paths, and zero-downtime upgrades (delivered 6 consecutive in-place EKS upgrades)",
@@ -186,10 +186,10 @@ const workExperiences = {
   display: true,
   experience: [
     {
-      role: "Senior Systems Engineer (Principal / Lead Platform scope)",
+      role: "Senior Platform Engineer",
       company: "Viator (TripAdvisor)",
       date: "January 2023 - Present",
-      desc: "Operating at Principal / Lead scope across the EKS platform, edge, IaC governance, and AI-assisted platform operations.",
+      desc: "Operating across the EKS platform, edge, IaC governance, and AI-assisted platform operations.",
       descBullets: [
         "Resilience architecture: Drove the multi-quarter EKS Disaster Recovery program (secondary CIDR, multi-cluster strategy, EKS Pod Identity, automated bootstrapping). Production stayed operational during the Oct 2025 AWS us-east-1 outage validated by registry pull-through cache and conservative Karpenter decisions made months earlier.",
         "EKS lifecycle: Owned 6 consecutive in-place upgrades from v1.24 to v1.30 in 12 months, plus cascading upgrades of ingress-nginx, cert-manager, Thanos, autoscaler, descheduler, CNI, kube-proxy, CoreDNS. Zero customer-facing disruption.",
